@@ -1,8 +1,38 @@
-.stem {
-	background-image: url("../images/stegosaurus_century_1904_knight.gif");
-	background-size: 93%;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	height: 500px;
-	width: 95%;
+
+@media (max-width: 400px) {
+
+	.outer {
+		width: 97%;
+		margin: 0 auto;
+	}
+
+	.stem {
+		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-size: 100%;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+		height: 500px;
+		width: 95%;
+		margin: 0 auto;
+		z-index: 12;
+	}
+
+	.stem-overlay {
+		background-color: rgba(38, 38, 38, 0.4);
+		
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 500px;
+	}
+
+	.stem-text {
+		margin: 3rem;
+		opacity: 1;
+		color: white;
+		text-shadow: 2px 2px 5px #000000;
+		z-index: 500;
+	}
 }
