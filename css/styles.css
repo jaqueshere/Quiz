@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
+	/*background-color: #f2f2f2;*/
 }
 
 *, *:before, *:after {
@@ -209,19 +210,19 @@ html {
 @media (min-width: 768px) {
 
 	.outer {
-		width: 100%;
-		height: 640px;
+		width: 768px;
+		height: 420px;
 		margin: 0 auto;
+		position: relative;
 	}
 
 	.stem {
 		background-image: url("../images/stegosaurus_century_1904_knight.gif");
-		background-size: 100%;
-		background-position: 0px 0px;
+		background-size: 490px;
+		background-position: 5px 0px;
 		background-repeat: no-repeat;
-		height: 100%;
-		width: 384px;
-		margin: 0 auto;
+		height: 420px;
+		width: 500px;
 		z-index: 12;
 		float: left;
 	}
@@ -230,10 +231,9 @@ html {
 		background-color: rgba(38, 38, 38, 0.4);
 		z-index: 10;
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 396px;
-		height: 100%;
+		width: 500px;
+		height: 420px;
+		float:left;
 	}
 
 	.stem-text {
@@ -246,7 +246,7 @@ html {
 
 	.options {
 		background-color: gray; 
-		width: 256px;
+		width: 268px;
 		margin: 0 auto;
 		z-index: 12;
 		border:1px;
@@ -260,9 +260,39 @@ html {
 		color: #131339;
 		z-index: 10;
 		top: 0;
-		left: 396px;
-		width: 628px;
-		height: 100%;
+		left: 500px;
+		width: 268px;
+		height: 420px;
 		clear: both;
+	}
+
+	.options-text {
+		top: 25px;
+		width: 220px;
+	}
+
+	.buttons {
+		top: 320px;
+		left: 599px;
+		width: 70px;
+		position: absolute;
+		margin: 0.5rem auto;
+		background-color: white;
+		display: block;
+		z-index: 15;
+		opacity:1;
+	}
+
+	.pushbutton {
+		align: center;
+		background-color: white;
+		width: 100%;
+	}
+
+	footer {
+		margin: 0 auto;
+		padding: 1rem 0 1rem 0;
+		width: 768px;
+		background-color: #f2f2f2;
 	}
 }
