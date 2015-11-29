@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	load();
 	console.log(assess.submit)
 	$('.pushbutton').click(function() {
@@ -13,8 +12,7 @@ $(document).ready(function() {
 			assess.progress();
 			assess.submit = true;
 			load();
-		}
-		
+		}		
 	});
 });
 
@@ -32,12 +30,14 @@ var assess = {
 		 *Then update missed or correct and total, and 
 		 *display feedback
 		 */
-		 if ($('#quizoptions input[type="radio"]:checked').val() == questions[assess.complete][3]){
+		 if ($('#quizoptions input[type="radio"]:checked').val() == questions[assess.complete][2]){
 		 	this.total = this.total + 1;
 		 	this.correct.push(assess.complete);
+		 	$('#quizoptions input[type="radio"]:checked').next().css("color", "green");
 		 }
 		 else {
 		 	this.missed.push(assess.complete);
+		 	$('#quizoptions input[type="radio"]:checked').next().css("color", "red");
 		 }
 	},
 };
@@ -52,6 +52,7 @@ function load() {
 	$('#quizoptions input[type="radio"]').each(function() {
 		this.checked=false;
 	});
+	$('.optionradio').css("color", "white");
 	$('.stem-text').text(questions[assess.complete][0]);
 	$('#optionradio1').text(questions[assess.complete][1][0]);
 	$('#optionradio2').text(questions[assess.complete][1][1]); 
