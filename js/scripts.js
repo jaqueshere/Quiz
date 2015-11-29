@@ -1,11 +1,20 @@
 $(document).ready(function() {
 
 	load();
-
+	console.log(assess.submit)
 	$('.pushbutton').click(function() {
-		assess.progress();
-		load();
-		/* trigger assessment */
+		if (assess.submit) {
+			/* trigger assessment */
+			assess.check();
+			assess.submit = false;
+			$('.pushbutton').text("Next");
+		}
+		else {
+			assess.progress();
+			assess.submit = true;
+			load();
+		}
+		
 	});
 });
 
@@ -14,6 +23,7 @@ var assess = {
 	missed: [],
 	correct: [],
 	total: 0,
+	submit: true,
 	progress: function() { 
 		this.complete = this.complete + 1;
 	},
@@ -22,6 +32,13 @@ var assess = {
 		 *Then update missed or correct and total, and 
 		 *display feedback
 		 */
+		 if ($('#quizoptions input[type="radio"]:checked').val() == questions[assess.complete][3]){
+		 	this.total = this.total + 1;
+		 	this.correct.push(assess.complete);
+		 }
+		 else {
+		 	this.missed.push(assess.complete);
+		 }
 	},
 };
 
@@ -32,9 +49,13 @@ var questions = [["There is a fork in the road. Down one path is the city of lia
 	["If a girl asks a guy what his sign is, there is a 1/11 probability that his sign is Scorpio. If she tells him her sign is Scorpio and asks him what his sign is, the probability his sign is Scorpio is: ",["1/11", "1/12", "1/5", "1/3"], 3]];
 
 function load() {
+	$('#quizoptions input[type="radio"]').each(function() {
+		this.checked=false;
+	});
 	$('.stem-text').text(questions[assess.complete][0]);
 	$('#optionradio1').text(questions[assess.complete][1][0]);
 	$('#optionradio2').text(questions[assess.complete][1][1]); 
 	$('#optionradio3').text(questions[assess.complete][1][2]);
 	$('#optionradio4').text(questions[assess.complete][1][3]);
+	$('.pushbutton').text("Submit");
 } 
