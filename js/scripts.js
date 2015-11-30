@@ -11,7 +11,7 @@ $(document).ready(function() {
 		else {
 			assess.progress();
 			assess.submit = true;
-			load();
+			
 		}		
 	});
 });
@@ -26,6 +26,9 @@ var assess = {
 		this.complete = this.complete + 1;
 		if (this.complete > 4) {
 			end();
+		}
+		else {
+			load();
 		}
 	},
 	check: function() {
