@@ -45,7 +45,7 @@ var assess = {
 	},
 };
 
-var questions = [["There is a fork in the road. Down one path is the city of liars. Down the other is the city of truth tellers. An old man comes down one path. What question should you ask him to find out if he's a liar?",["Is Pepsi better than Coke?", "Where would someone from the other direction tell me he came from?", "Are you a tree frog?", "Any of the above"], 3],
+var questions = [["There is a fork in the road. Down one path is the city of liars. Down the other is the city of truth tellers. An old man comes down one path. What question should you ask him to find out if he's a liar?",["Is Pepsi better than Coke?", "If you were a liar, what town would you say you came from?", "Are you a tree frog?", "Any of the above"], 3],
 	["If every dinosaur is an animal, and  every animal believes in causation: ",["The dinosaurs died out because of a meteor.", "The dinosaurs died out because of a volcano.", "The dinosaurs died out from smoking cigarettes.", "The dinosaurs could not have understood Bob Dylan."], 3],	
 	["The purpose of socks is: ",["to keep feet warm.", "to make you taller.", "to give you something to fold at the laundromat.", "to entertain dogs."], 2],
 	["If Sam can never find his keys after a night at Johny Brenda's wine bar, and on a Tuesday night Leslie finds Sam's keys:",["Leslie did not go to Johny Brenda's.", "Leslie kept the keys in her purse Tuesday.", "Leslie has studied quantum mechanics.", "Leslie knows Kung Fu."], 3],
