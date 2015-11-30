@@ -17,6 +17,24 @@ html {
 		margin: 0 auto;
 	}
 
+	.welcome {
+		width: 100%;
+		height: 423px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: white;
+		color: blue;
+		opacity: .7;
+	}
+
+	#message {
+		width: 250px;
+		height: 200px;
+		margin: 50px auto;
+	}
+
 	.stem {
 		background-image: url("../images/stegosaurus_century_1904_knight.gif");
 		background-size: 100%;
@@ -86,7 +104,7 @@ html {
 	}
 
 	.buttons {
-		top: 400px;
+		top: 470px;
 		left: 125px;
 		width: 70px;
 		position: absolute;
@@ -114,6 +132,24 @@ html {
 		width: 97%;
 		height: 500px;
 		margin: 0 auto;
+	}
+
+	.welcome {
+		width: 100%;
+		height: 500px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: white;
+		color: blue;
+		opacity: .7;
+	}
+
+	#message {
+		width: 280px;
+		height: 200px;
+		margin: 50px auto;
 	}
 
 	.stem {
@@ -185,7 +221,7 @@ html {
 	}
 
 	.buttons {
-		top: 450px;
+		top: 470px;
 		left: 125px;
 		width: 70px;
 		position: absolute;
@@ -215,6 +251,24 @@ html {
 	.outer {
 		width: 97%;
 		margin: 0 auto;
+	}
+
+	.welcome {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: white;
+		color: blue;
+		opacity: .7;
+	}
+
+	#message {
+		width: 250px;
+		height: 200px;
+		margin: 50px auto;
 	}
 
 	.stem {
@@ -317,6 +371,25 @@ html {
 		position: relative;
 	}
 
+	.welcome {
+		width: 100%;
+		height: 423px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: white;
+		color: blue;
+		opacity: .7;
+	}
+
+	#message {
+		width: 230px;
+		height: 420px;
+		position: absolute;
+		left: 510px;
+	}
+
 	.stem {
 		background-image: url("../images/stegosaurus_century_1904_knight.gif");
 		background-size: 490px;
@@ -405,6 +478,25 @@ html {
 		height: 536px;
 		margin: 0 auto;
 		position: relative;
+	}
+
+	.welcome {
+		width: 100%;
+		height: 536px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: white;
+		color: blue;
+		opacity: .7;
+	}
+
+	#message {
+		position: absolute;
+		left: 635px;
+		width: 325px;
+		height: 536px;
 	}
 
 	.stem {

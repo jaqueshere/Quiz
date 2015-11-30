@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	load();
+	start();
 	console.log(assess.submit)
 	$('.pushbutton').click(function() {
 		if (assess.submit) {
@@ -24,6 +24,9 @@ var assess = {
 	submit: true,
 	progress: function() { 
 		this.complete = this.complete + 1;
+		if (this.complete > 4) {
+			end();
+		}
 	},
 	check: function() {
 		/*Need to compare question[x][2] to user's answer
@@ -60,3 +63,21 @@ function load() {
 	$('#optionradio4').text(questions[assess.complete][1][3]);
 	$('.pushbutton').text("Submit");
 } 
+
+function start() {
+	$('.options-overlay').css("visibility", "hidden");
+	$('.buttons').css("visibility", "hidden");
+	$('#message').text('This is a brief test to determine your basic reasoning ability. For each of the questions that follow, choose the option that is most reasonable. Click anywhere to proceed.');
+	$('.welcome').click(function() {
+		$('.welcome').css("visibility", "hidden");
+		$('.buttons').css("visibility", "visible");
+		$('.options-overlay').css("visibility", "visible");
+		load();
+	});
+}
+
+function end() {
+	$('#message').text('You achieved a score of: ' + assess.total);
+	$('.welcome').css("visibility", "visible");
+	$('.options-overlay').css("visibility", "hidden");
+}
