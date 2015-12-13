@@ -9,6 +9,11 @@ html {
 	-webkit-font-smoothing: inherit;
 }
 
+body {
+	/*font-family: 'Shadows Into Light', cursive;*/
+	font-family: 'Slabo 27px', serif;
+}
+
 @media (max-width: 320px) {
 
 	.outer {
@@ -315,6 +320,7 @@ html {
 		height: 420px;
 		margin: 0 auto;
 		position: relative;
+		font-size: 1.5rem;
 	}
 
 	.stem {
