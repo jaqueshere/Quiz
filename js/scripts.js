@@ -71,11 +71,13 @@ var newQuiz = {
 		$('#optionradio3').text(questions[this.complete][1][2]);
 		$('#optionradio4').text(questions[this.complete][1][3]);
 		$('.pushbutton').text("Submit");
+		$('.pushbutton').css("color", "black");
 	}, 
 	next: function() {
 		this.check();
 		this.submit = false;
 		$('.pushbutton').text("Next");
+		$('.pushbutton').css("color","red");
 	},
 	end: function() {
 		$('#message').text('You achieved a score of: ' + this.total);
