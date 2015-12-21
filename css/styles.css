@@ -41,7 +41,7 @@ body {
 	}
 
 	.stem {
-		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-image: url("../images/portal_rubbing.gif");
 		background-size: 100%;
 		background-position: 0px 0px;
 		background-repeat: no-repeat;
@@ -158,7 +158,7 @@ body {
 	}
 
 	.stem {
-		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-image: url("../images/portal_rubbing.gif");
 		background-size: 100%;
 		background-position: 0px 0px;
 		background-repeat: no-repeat;
@@ -277,7 +277,7 @@ body {
 	}
 
 	.stem {
-		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-image: url("../images/portal_rubbing.gif");
 		background-size: 100%;
 		background-position: 0px 0px;
 		background-repeat: no-repeat;
@@ -397,7 +397,7 @@ body {
 	}
 
 	.stem {
-		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-image: url("../images/portal_rubbing.gif");
 		background-size: 490px;
 		background-position: 5px 0px;
 		background-repeat: no-repeat;
@@ -467,6 +467,8 @@ body {
 		align: center;
 		background-color: white;
 		width: 100%;
+		
+		height: 100%;
 	}
 
 	footer {
@@ -506,7 +508,7 @@ body {
 	}
 
 	.stem {
-		background-image: url("../images/stegosaurus_century_1904_knight.gif");
+		background-image: url("../images/portal_rubbing.gif");
 		background-size: 615px;
 		background-position: 5px 0px;
 		background-repeat: no-repeat;
