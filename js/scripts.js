@@ -82,6 +82,17 @@ var newQuiz = {
 	end: function() {
 		$('#message').text('You achieved a score of: ' + this.total);
 		$('.welcome').css("visibility", "visible");
+		$('.stem-text').text('The answers are: ');
+		$('.stem-text').append(questions[0][0]);
+		$('.stem-text').append(' <span style = "color: red">' + questions[0][1][3] + '</span></br>');
+		$('.stem-text').append(questions[1][0]);
+		$('.stem-text').append(' <span style = "color: red">' + questions[1][1][0] + '</span></br>');
+		$('.stem-text').append(questions[2][0]);
+		$('.stem-text').append(' <span style = "color: red">' + questions[2][1][2] + '</span></br>');
+		$('.stem-text').append(questions[3][0]);
+		$('.stem-text').append(' <span style = "color: red">' + questions[3][1][2] + '</span></br>');
+		$('.stem-text').append(questions[4][0]);
+		$('.stem-text').append(' <span style = "color: red">' + questions[4][1][3] + '</span></br>');
 		$('.options-overlay').css("visibility", "hidden");
 	}
 };
