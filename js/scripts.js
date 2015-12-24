@@ -70,6 +70,7 @@ var newQuiz = {
 		$('#optionradio2').text(questions[this.complete][1][1]); 
 		$('#optionradio3').text(questions[this.complete][1][2]);
 		$('#optionradio4').text(questions[this.complete][1][3]);
+		$('.options-mask').css("visibility", "hidden");
 		$('.pushbutton').text("Submit");
 		$('.pushbutton').css("color", "black");
 	}, 
@@ -77,11 +78,10 @@ var newQuiz = {
 		this.check();
 		this.submit = false;
 		$('.pushbutton').text("Next");
-		$('.pushbutton').css("color","red");
+		$('.options-mask').css("visibility", "visible");
 	},
 	end: function() {
 		$('#message').text('You achieved a score of: ' + this.total);
-		$('.welcome').css("visibility", "visible");
 		$('.stem-text').text('The answers are: ');
 		$('.stem-text').append(questions[0][0]);
 		$('.stem-text').append(' <span style = "color: red">' + questions[0][1][3] + '</span></br>');

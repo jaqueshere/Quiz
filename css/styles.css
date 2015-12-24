@@ -98,6 +98,18 @@ body {
 		opacity:1;		
 	}
 
+	.options-mask {
+		background-color: rgba(70, 70, 70, 0.2);
+		position: absolute;
+		color: #131339;
+		z-index: 15;
+		top: 250px;
+		left: 0;
+		width: 100%;
+		height: 280px;
+		clear: both;
+	}
+
 	.radioleft {
 		float: left;
 	}
@@ -213,6 +225,18 @@ body {
 		margin: 2rem;
 		color: white;
 		opacity:1;		
+	}
+
+	.options-mask {
+		background-color: rgba(70, 70, 70, 0.2);
+		position: absolute;
+		color: #131339;
+		z-index: 15;
+		top: 265px;
+		left: 0;
+		width: 100%;
+		height: 375px;
+		clear: both;
 	}
 
 	.radioleft {
@@ -334,6 +358,18 @@ body {
 		opacity:1;		
 	}
 
+	.options-mask {
+		background-color: rgba(70, 70, 70, 0.2);
+		position: absolute;
+		color: #131339;
+		z-index: 15;
+		top: 265px;
+		left: 0;
+		width: 100%;
+		height: 375px;
+		clear: both;
+	}
+
 	.radioleft {
 		float: left;
 	}
@@ -451,6 +487,18 @@ body {
 		width: 220px;
 	}
 
+	.options-mask {
+		background-color: rgba(70, 70, 70, 0.2);
+		position: absolute;
+		color: #131339;
+		z-index: 15;
+		top: 0;
+		left:500px;
+		width: 268px;
+		height: 420px;
+		clear: both;
+	}
+
 	.buttons {
 		top: 320px;
 		left: 599px;
@@ -560,6 +608,18 @@ body {
 	.options-text {
 		top: 25px;
 		width: 355px;
+	}
+
+	.options-mask {
+		background-color: rgba(70, 70, 70, 0.2);
+		position: absolute;
+		color: #131339;
+		z-index: 15;
+		top: 0;
+		left:625px;
+		width: 355px;
+		height: 536px;
+		clear: both;
 	}
 
 	.buttons {
