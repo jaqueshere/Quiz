@@ -39,7 +39,13 @@ var newQuiz = {
 		 *Then update missed or correct and total, and 
 		 *display feedback
 		 */
-		 if ($('#quizoptions input[type="radio"]:checked').val() == questions[this.complete][2]){
+
+		 if (!$('#quizoptions input[type="radio"]:checked').val()) {
+		 	alert("Please enter an answer!");
+		 	/*while (!$('#quizoptions input[type="radio"]:checked').val()) {}*/
+		 	exit;
+		 }
+		 else if ($('#quizoptions input[type="radio"]:checked').val() == questions[this.complete][2]){
 		 	this.total = this.total + 1;
 		 	this.correct.push(this.complete);
 		 	$('#quizoptions input[type="radio"]:checked').next().css("color", "green");
@@ -81,7 +87,9 @@ var newQuiz = {
 		$('.options-mask').css("visibility", "visible");
 	},
 	end: function() {
-		$('#message').text('You achieved a score of: ' + this.total);
+		$('.options-overlay').text("");
+		$('.options-overlay').append('<div style="position: relative; top: 9rem; width:100%"><p style="width: 70%; margin: 0 auto">You achieved a score of: ' + this.total + '</p></div>');
+		$('.options-overlay').css("color", "red");
 		$('.stem-text').text('The answers are: ');
 		$('.stem-text').append(questions[0][0]);
 		$('.stem-text').append(' <span style = "color: red">' + questions[0][1][3] + '</span></br>');
@@ -93,7 +101,8 @@ var newQuiz = {
 		$('.stem-text').append(' <span style = "color: red">' + questions[3][1][2] + '</span></br>');
 		$('.stem-text').append(questions[4][0]);
 		$('.stem-text').append(' <span style = "color: red">' + questions[4][1][3] + '</span></br>');
-		$('.options-overlay').css("visibility", "hidden");
+		
+		$('.buttons').css("visibility","hidden");
 	}
 };
 
