@@ -157,8 +157,8 @@ body {
 	}
 
 	#feedback {
-		position: fixed;
-		top: 475px;
+		position: relative;
+		top: 1rem;
 	}
 
 	footer {
