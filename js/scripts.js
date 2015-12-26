@@ -57,6 +57,7 @@ var newQuiz = {
 	},
 	start: function() {
 		$('.options-overlay').css("visibility", "hidden");
+		$('.stem-overlay').css("visibility", "hidden");
 		$('.buttons').css("visibility", "hidden");
 		$('#message').text('This is a brief quiz on some key points of early Andean art. The questions cover the Early Horizon to Late Horizon periods. Click anywhere to proceed.');
 		$('.welcome').click(function() {
@@ -67,6 +68,7 @@ var newQuiz = {
 		});
 	},
 	load: function() {
+		$('.stem-overlay').css("visibility", "visible");
 		$('#quizoptions input[type="radio"]').each(function() {
 			this.checked=false;
 		});
@@ -87,9 +89,11 @@ var newQuiz = {
 		$('.options-mask').css("visibility", "visible");
 	},
 	end: function() {
+		$('.options-mask').css("visibility", "hidden");
 		$('.options-overlay').text("");
-		$('.options-overlay').append('<div style="position: relative; top: 9rem; width:100%"><p style="width: 70%; margin: 0 auto">You achieved a score of: ' + this.total + '</p></div>');
+		$('.options-overlay').append('<div id="feedback" style="width:100%"><p style="width: 70%; margin: 0 auto">You achieved a score of: ' + this.total + '</p></div>');
 		$('.options-overlay').css("color", "red");
+		$('.stem').css("min-height","428px");
 		$('.stem-text').text('The answers are: ');
 		$('.stem-text').append(questions[0][0]);
 		$('.stem-text').append(' <span style = "color: red">' + questions[0][1][3] + '</span></br>');
